@@ -1,0 +1,60 @@
+# ================================================
+# GitHub Actions: Auto-deploy to GitHub Pages
+# Trigger: Every push to the 'main' branch
+# ================================================
+# INTERVIEW EXPLANATION:
+# This is a CI/CD pipeline. When you push code to GitHub,
+# GitHub Actions automatically:
+# 1. Checks out your code
+# 2. Deploys it to GitHub Pages
+# No manual steps needed after the first setup!
+
+name: Deploy Portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main    # Change to 'master' if your default branch is master
+
+  # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+# Sets permissions for GitHub token to allow Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # Step 3: Upload the entire portfolio as artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload the entire repo root (where index.html lives)
+          path: '.'
+
+      # Step 4: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
