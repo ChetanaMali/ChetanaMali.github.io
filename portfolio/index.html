@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chetana Mali — Cloud & DevOps Engineer. Portfolio showcasing AWS, Docker, Kubernetes, Terraform, CI/CD pipelines and cloud infrastructure projects." />
+  <meta name="keywords" content="DevOps Engineer, Cloud Engineer, AWS, Docker, Kubernetes, Terraform, Jenkins, CI/CD, Chetana Mali" />
+  <meta name="author" content="Chetana Mali" />
+
+  <!-- Open Graph for LinkedIn sharing -->
+  <meta property="og:title" content="Chetana Mali | Cloud & DevOps Engineer" />
+  <meta property="og:description" content="Fresher Cloud & DevOps Engineer with hands-on experience in AWS, Docker, Jenkins CI/CD and infrastructure automation." />
+  <meta property="og:type" content="website" />
+
+  <title>Chetana Mali | Cloud & DevOps Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>CM<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="assets/resume/ChetanaMaliDevOpsResume.pdf" target="_blank" class="nav-cta">Resume <i class="fas fa-download"></i></a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HOME / HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span class="mono">Available for opportunities</span>
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="accent-cyan">Chetana Mali</span>
+        </h1>
+        <div class="hero-role">
+          <span class="mono role-prefix">$ whoami —— </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-summary">
+          A passionate Cloud & DevOps Engineer who turns infrastructure chaos into elegant, automated pipelines.
+          I build, containerize, and deploy — from <span class="accent-cyan">AWS EC2</span> to
+          <span class="accent-amber">Docker Compose</span> to <span class="accent-cyan">Jenkins CI/CD</span>.
+          Currently seeking fresher roles to bring real-world project experience to your team.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="assets/resume/ChetanaMaliDevOpsResume.pdf" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number accent-cyan">3+</span>
+            <span class="stat-label">Live Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number accent-amber">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number accent-cyan">1</span>
+            <span class="stat-label">PG Program</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">chetana@devops-server:~</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat profile.json</span></div>
+            <div class="t-line t-output">{</div>
+            <div class="t-line t-output">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-str">"Chetana Mali"</span>,</div>
+            <div class="t-line t-output">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"Cloud & DevOps Engineer"</span>,</div>
+            <div class="t-line t-output">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Mumbai, India 🇮🇳"</span>,</div>
+            <div class="t-line t-output">&nbsp;&nbsp;<span class="t-key">"stack"</span>: [</div>
+            <div class="t-line t-output">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"AWS"</span>, <span class="t-str">"Docker"</span>, <span class="t-str">"Jenkins"</span>,</div>
+            <div class="t-line t-output">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Kubernetes"</span>, <span class="t-str">"Terraform"</span></div>
+            <div class="t-line t-output">&nbsp;&nbsp;],</div>
+            <div class="t-line t-output">&nbsp;&nbsp;<span class="t-key">"open_to_work"</span>: <span class="t-bool">true</span></div>
+            <div class="t-line t-output">}</div>
+            <div class="t-line"><span class="t-prompt">$</span> <span class="t-blink">▋</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="mono">scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">01 / about</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-bio">
+            I'm a Cloud & DevOps Engineer fresher who is pursuing a Post Graduate Program in DevOps & Cloud Computing from Intellipaat. While most freshers study theory, I went deep — I built and deployed a full <strong>multi-service Docker application on AWS EC2</strong>, configured Jenkins pipelines with GitHub webhooks, and debugged real production-level issues like GPG key errors, disk threshold failures, and Elastic IP configurations.
+          </p>
+          <p class="about-bio">
+            My approach is simple: <span class="accent-cyan">understand the "why"</span> behind every tool before touching the "how." That's why I can explain not just how to write a Dockerfile, but why Docker exists, what problems it solves, and when to use Docker Compose.
+          </p>
+
+          <div class="about-objective">
+            <h3 class="subsection-title"><i class="fas fa-bullseye accent-cyan"></i> Career Objective</h3>
+            <p>To secure a DevOps / Cloud Engineer role where I can apply my hands-on AWS, Docker, and CI/CD skills to automate infrastructure, reduce deployment time, and contribute to engineering teams that ship fast and scale reliably.</p>
+          </div>
+
+          <div class="about-focus">
+            <h3 class="subsection-title"><i class="fas fa-crosshairs accent-amber"></i> What I Focus On</h3>
+            <div class="focus-grid">
+              <div class="focus-item">
+                <i class="fas fa-cloud"></i>
+                <span>Cloud Infrastructure</span>
+              </div>
+              <div class="focus-item">
+                <i class="fas fa-infinity"></i>
+                <span>CI/CD Pipelines</span>
+              </div>
+              <div class="focus-item">
+                <i class="fab fa-docker"></i>
+                <span>Containerization</span>
+              </div>
+              <div class="focus-item">
+                <i class="fas fa-code-branch"></i>
+                <span>Infrastructure as Code</span>
+              </div>
+              <div class="focus-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Security & IAM</span>
+              </div>
+              <div class="focus-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Monitoring & Logging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-journey">
+          <h3 class="subsection-title"><i class="fas fa-road accent-cyan"></i> My Learning Journey</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date mono">2022</span>
+                <h4>Started Web Development</h4>
+                <p>Built foundational skills in HTML, CSS, JavaScript, and Python</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date mono">2023</span>
+                <h4>Discovered Cloud & DevOps</h4>
+                <p>Enrolled in Intellipaat PG Program — AWS, Linux, Docker, CI/CD deep dives</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot accent"></div>
+              <div class="timeline-content">
+                <span class="timeline-date mono">2024</span>
+                <h4>Built Real Projects</h4>
+                <p>Deployed fullstack Docker app on AWS EC2 with Jenkins CI/CD pipeline and GitHub webhooks</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot accent"></div>
+              <div class="timeline-content">
+                <span class="timeline-date mono">2025 →</span>
+                <h4>Actively Job Seeking</h4>
+                <p>Targeting DevOps/Cloud roles at MNCs and startups across Mumbai, Pune, Bengaluru</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">02 / skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-subtitle">Tools and technologies I work with daily</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Cloud -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-cloud skill-cat-icon cyan"></i>
+            <h3>Cloud (AWS)</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
+            <span class="skill-tag">EC2</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">VPC</span>
+            <span class="skill-tag">IAM</span>
+            <span class="skill-tag">RDS</span>
+            <span class="skill-tag">CloudWatch</span>
+            <span class="skill-tag">Route 53</span>
+            <span class="skill-tag">EBS</span>
+            <span class="skill-tag">Elastic IP</span>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-infinity skill-cat-icon amber"></i>
+            <h3>DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git/GitHub</span>
+            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-tag">Docker Compose</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Webhooks</span>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-code skill-cat-icon cyan"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-tag">Shell Scripting</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Node.js (Express)</span>
+            <span class="skill-tag">YAML</span>
+            <span class="skill-tag">JSON</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools skill-cat-icon amber"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">PuTTY</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">Ansible</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Proficiency bars -->
+      <div class="proficiency-section">
+        <h3 class="subsection-title centered">Core Proficiency</h3>
+        <div class="proficiency-grid">
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>AWS (EC2, S3, VPC, IAM)</span>
+              <span class="mono accent-cyan">80%</span>
+            </div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>Docker & Docker Compose</span>
+              <span class="mono accent-cyan">85%</span>
+            </div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>Jenkins CI/CD</span>
+              <span class="mono accent-cyan">75%</span>
+            </div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>Linux / Shell Scripting</span>
+              <span class="mono accent-cyan">78%</span>
+            </div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:78%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>Terraform</span>
+              <span class="mono accent-amber">60%</span>
+            </div>
+            <div class="prof-bar"><div class="prof-fill amber" style="--w:60%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>Kubernetes</span>
+              <span class="mono accent-amber">55%</span>
+            </div>
+            <div class="prof-bar"><div class="prof-fill amber" style="--w:55%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">03 / projects</span>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-subtitle">Real projects — deployed, debugged, and documented</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card featured">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fab fa-docker"></i></div>
+            <div class="project-badges">
+              <span class="badge badge-featured">Featured</span>
+              <span class="badge badge-live">Live on AWS</span>
+            </div>
+          </div>
+          <h3 class="project-title">Fullstack Docker Application on AWS</h3>
+          <p class="project-desc">
+            A production-style multi-service web application running Express.js, Flask, and MongoDB as separate Docker containers — orchestrated with Docker Compose, deployed on AWS EC2, and automated with Jenkins CI/CD.
+          </p>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4><i class="fas fa-exclamation-circle accent-amber"></i> Problem Solved</h4>
+              <p>Manual deployments were slow and error-prone. I automated the entire pipeline from GitHub push to live deployment on EC2 using Jenkins and webhooks — zero manual SSH.</p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-layer-group accent-cyan"></i> Architecture</h4>
+              <ul>
+                <li>GitHub repo → Jenkins webhook trigger</li>
+                <li>Jenkins builds & pushes Docker images</li>
+                <li>Docker Compose orchestrates Express + Flask + MongoDB</li>
+                <li>AWS EC2 (Ubuntu) hosts the stack with Elastic IP</li>
+                <li>EBS volume for persistent MongoDB data</li>
+              </ul>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-fire accent-amber"></i> Challenges & Solutions</h4>
+              <ul>
+                <li><strong>GPG Key Error:</strong> Jenkins install failed — fixed by updating the apt keyring manually</li>
+                <li><strong>Docker Socket Permission:</strong> Jenkins user lacked Docker access — added to docker group</li>
+                <li><strong>Node Offline Error:</strong> Disk threshold triggered node offline — adjusted Jenkins disk threshold config</li>
+                <li><strong>Webhook breakage:</strong> EC2 IP changed on restart — solved with Elastic IP allocation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Docker Compose</span>
+            <span class="tech-tag">Jenkins</span>
+            <span class="tech-tag">AWS EC2</span>
+            <span class="tech-tag">EBS</span>
+            <span class="tech-tag">Elastic IP</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">GitHub Webhooks</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/ChetanaMali/fullstack-docker-project" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub Repo
+            </a>
+            <a href="#" class="project-link secondary">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 — Placeholder, ready for you to fill -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fab fa-aws"></i></div>
+            <div class="project-badges">
+              <span class="badge badge-wip">Add Details</span>
+            </div>
+          </div>
+          <h3 class="project-title">Project 2 — Your Project Name Here</h3>
+          <p class="project-desc">
+            Replace this with your project description. Describe what it does, what problem it solves, and how it works in 2–3 lines.
+          </p>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4><i class="fas fa-exclamation-circle accent-amber"></i> Problem Solved</h4>
+              <p>What problem did this project address? Add your real context here.</p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-layer-group accent-cyan"></i> Architecture</h4>
+              <ul>
+                <li>Step 1 of your architecture</li>
+                <li>Step 2 of your architecture</li>
+                <li>Step 3 of your architecture</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            <span class="tech-tag">Technology 1</span>
+            <span class="tech-tag">Technology 2</span>
+            <span class="tech-tag">Technology 3</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 — Placeholder -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fas fa-server"></i></div>
+            <div class="project-badges">
+              <span class="badge badge-wip">Add Details</span>
+            </div>
+          </div>
+          <h3 class="project-title">Project 3 — Your Project Name Here</h3>
+          <p class="project-desc">
+            Replace this with your project description.
+          </p>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4><i class="fas fa-exclamation-circle accent-amber"></i> Problem Solved</h4>
+              <p>What problem did this project address?</p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-layer-group accent-cyan"></i> Architecture</h4>
+              <ul>
+                <li>Architecture step 1</li>
+                <li>Architecture step 2</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            <span class="tech-tag">Technology 1</span>
+            <span class="tech-tag">Technology 2</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub Repo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">04 / experience</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="experience-timeline">
+
+        <div class="exp-item">
+          <div class="exp-date">
+            <span class="mono">2024 — Present</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role">DevOps Engineer Trainee</h3>
+              <span class="exp-company">Self-Directed / Intellipaat PG Program</span>
+              <span class="exp-type">Training + Projects</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Completed PG program covering AWS, Linux, Docker, Kubernetes, Jenkins, Terraform, and Ansible</li>
+              <li>Built and deployed a multi-service fullstack application using Docker Compose on AWS EC2</li>
+              <li>Configured Jenkins CI/CD pipeline with GitHub webhook integration for automated deployments</li>
+              <li>Debugged complex infrastructure issues: Jenkins GPG errors, Docker socket permissions, disk thresholds</li>
+              <li>Managed AWS resources: EC2, EBS, Elastic IP, IAM, S3, VPC, Security Groups</li>
+              <li>Prepared 79+ interview Q&A covering all major DevOps tools and cloud services</li>
+            </ul>
+            <div class="exp-tech">
+              <span class="tech-tag sm">AWS</span>
+              <span class="tech-tag sm">Docker</span>
+              <span class="tech-tag sm">Jenkins</span>
+              <span class="tech-tag sm">Linux</span>
+              <span class="tech-tag sm">Terraform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more experience here when you have internship/job -->
+        <div class="exp-item placeholder">
+          <div class="exp-date">
+            <span class="mono">Add here</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Your Internship / Job Title</h3>
+              <span class="exp-company">Company Name</span>
+              <span class="exp-type">Full-time / Internship</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Add your responsibilities and achievements here</li>
+              <li>Quantify wherever possible: "Reduced deployment time by 40%"</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">05 / certifications</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Validated skills and credentials</p>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-title">Post Graduate Program in DevOps & Cloud</h3>
+            <span class="cert-issuer">Intellipaat</span>
+            <span class="cert-date mono">2024</span>
+            <p class="cert-desc">Comprehensive program covering AWS, Docker, Kubernetes, Jenkins, Terraform, Ansible, and CI/CD practices</p>
+          </div>
+          <div class="cert-badge">PG Program</div>
+        </div>
+
+        <!-- Add AWS cert when you complete it -->
+        <div class="cert-card upcoming">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
+            <span class="cert-issuer">Amazon Web Services</span>
+            <span class="cert-date mono accent-amber">In Progress</span>
+            <p class="cert-desc">Foundational AWS certification covering cloud concepts, security, and core services</p>
+          </div>
+          <div class="cert-badge upcoming-badge">Coming Soon</div>
+        </div>
+
+        <!-- Add more as you complete them -->
+        <div class="cert-card upcoming">
+          <div class="cert-icon"><i class="fas fa-dharmachakra"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-title">Certified Kubernetes Administrator (CKA)</h3>
+            <span class="cert-issuer">CNCF / Linux Foundation</span>
+            <span class="cert-date mono accent-amber">Planned 2025</span>
+            <p class="cert-desc">Hands-on Kubernetes cluster administration certification</p>
+          </div>
+          <div class="cert-badge upcoming-badge">Planned</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME ===================== -->
+  <section class="section section-dark resume-section" id="resume">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">06 / resume</span>
+        <h2 class="section-title">Resume</h2>
+      </div>
+      <div class="resume-cta-block">
+        <div class="resume-info">
+          <i class="fas fa-file-pdf resume-icon"></i>
+          <div>
+            <h3>Chetana Mali — Cloud & DevOps Engineer</h3>
+            <p class="mono">ChetanaMaliDevOpsResume.pdf</p>
+            <p>Updated for 2025 job applications. ATS-optimized with keywords for DevOps and Cloud roles.</p>
+          </div>
+        </div>
+        <a href="assets/resume/ChetanaMaliDevOpsResume.pdf" target="_blank" class="btn btn-primary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+      <div class="resume-note">
+        <i class="fas fa-info-circle accent-cyan"></i>
+        <span>To update your resume: replace the file at <code>assets/resume/ChetanaMaliDevOpsResume.pdf</code> in your GitHub repo — the download button updates automatically.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">07 / contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open to DevOps & Cloud Engineer roles. Let's talk!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:chetana.mali@email.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="contact-type">Email</span>
+              <span class="contact-value">chetana.mali@email.com</span>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://linkedin.com/in/chetana-mali" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <span class="contact-type">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/chetana-mali</span>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://github.com/ChetanaMali" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <div>
+              <span class="contact-type">GitHub</span>
+              <span class="contact-value">github.com/ChetanaMali</span>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3 class="subsection-title">Send a Message</h3>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="chetanamali9763@gmail.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Hi Chetana, I'm a recruiter at..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note mono">
+            * Form uses mailto — your email client will open. For a live contact form, connect Formspree or EmailJS.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>CM<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Cloud & DevOps Engineer | Mumbai, India</p>
+          <p class="mono footer-status"><span class="status-dot sm"></span> Open to work</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/ChetanaMali" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/chetana-mali" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:chetana.mali@email.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mono">Built with HTML · CSS · JS · Deployed on GitHub Pages</p>
+        <p>© 2025 Chetana Mali. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
