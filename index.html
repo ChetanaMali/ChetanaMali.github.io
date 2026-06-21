@@ -38,7 +38,7 @@
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
         <li><a href="assets/resume/ChetanaMaliDevOpsResume.pdf" target="_blank" class="nav-cta">Resume <i class="fas fa-download"></i></a></li>
       </ul>
@@ -84,7 +84,7 @@
         </div> -->
         <div class="hero-stats">
           <div class="stat">
-            <span class="stat-number accent-cyan">3+</span>
+            <span class="stat-number accent-cyan">4+</span>
             <span class="stat-label">Live Projects</span>
           </div>
           <div class="stat-divider"></div>
@@ -237,9 +237,11 @@
             <span class="skill-tag">EC2</span>
             <span class="skill-tag">S3</span>
             <span class="skill-tag">VPC</span>
+            <span class="skill-tag">IGW</span>
+            <span class="skill-tag">Subnet</span>
             <span class="skill-tag">IAM</span>
-            <span class="skill-tag">RDS</span>
-            <span class="skill-tag">CloudWatch</span>
+            <span class="skill-tag">ASG</span>
+            <span class="skill-tag">LB</span>
             <span class="skill-tag">Route 53</span>
             <span class="skill-tag">EBS</span>
             <span class="skill-tag">Elastic IP</span>
@@ -253,15 +255,14 @@
             <h3>DevOps</h3>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
-            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git/GitHub</span>
-            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
-            <span class="skill-tag">Docker Compose</span>
+            <span class="skill-tag">CI/CD</span>
             <span class="skill-tag">Jenkins</span>
             <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-tag">Docker Compose</span>
+            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git/GitHub</span>
+            <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
             <span class="skill-tag">Terraform</span>
-            <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">Webhooks</span>
           </div>
         </div>
 
@@ -275,10 +276,9 @@
             <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
             <span class="skill-tag">Shell Scripting</span>
             <span class="skill-tag">Bash</span>
+            <span class="skill-tag">YAML</span>
             <span class="skill-tag">Flask</span>
             <span class="skill-tag">Node.js (Express)</span>
-            <span class="skill-tag">YAML</span>
-            <span class="skill-tag">JSON</span>
           </div>
         </div>
 
@@ -292,7 +292,6 @@
             <span class="skill-tag">VS Code</span>
             <span class="skill-tag">PuTTY</span>
             <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">Nginx</span>
             <span class="skill-tag">Ansible</span>
           </div>
         </div>
@@ -300,7 +299,7 @@
       </div>
 
       <!-- Proficiency bars -->
-      <div class="proficiency-section">
+      <!-- <div class="proficiency-section">
         <h3 class="subsection-title centered">Core Proficiency</h3>
         <div class="proficiency-grid">
           <div class="prof-item">
@@ -347,7 +346,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <!-- ===================== PROJECTS ===================== -->
@@ -364,49 +363,47 @@
         <!-- PROJECT 1 -->
         <div class="project-card featured">
           <div class="project-card-header">
-            <div class="project-icon"><i class="fab fa-docker"></i></div>
+            <div class="project-icon"><i class="fas fa-infinity"></i></div>
             <div class="project-badges">
-              <span class="badge badge-featured">Featured</span>
-              <span class="badge badge-live">Live on AWS</span>
+              <!-- <span class="badge badge-featured">Featured</span> -->
+              <!-- <span class="badge badge-live">Live on AWS</span> -->
             </div>
           </div>
-          <h3 class="project-title">Fullstack Docker Application on AWS</h3>
-          <p class="project-desc">
+          <h3 class="project-title">CI/CD Pipeline — Multi-Service Deployment on AWS</h3>
+          <!-- <p class="project-desc">
             A production-style multi-service web application running Express.js, Flask, and MongoDB as separate Docker containers — orchestrated with Docker Compose, deployed on AWS EC2, and automated with Jenkins CI/CD.
-          </p>
+          </p> -->
 
           <div class="project-details">
-            <div class="detail-block">
+            <!-- <div class="detail-block">
               <h4><i class="fas fa-exclamation-circle accent-amber"></i> Problem Solved</h4>
               <p>Manual deployments were slow and error-prone. I automated the entire pipeline from GitHub push to live deployment on EC2 using Jenkins and webhooks — zero manual SSH.</p>
-            </div>
+            </div> -->
             <div class="detail-block">
-              <h4><i class="fas fa-layer-group accent-cyan"></i> Architecture</h4>
+              <h4><i class="fas fa-layer-group accent-cyan"></i> Details</h4>
               <ul>
-                <li>GitHub repo → Jenkins webhook trigger</li>
-                <li>Jenkins builds & pushes Docker images</li>
-                <li>Docker Compose orchestrates Express + Flask + MongoDB</li>
-                <li>AWS EC2 (Ubuntu) hosts the stack with Elastic IP</li>
-                <li>EBS volume for persistent MongoDB data</li>
+                <li>Deployed Express (Node.js) and Flask (Python) as independent backend services on AWS EC2. </li>
+                <li>Used PM2 process manager to ensure application persistence across EC2 instance restarts.</li>
+                <li>Containerized both applications using Docker and exposed on separate ports (8000, 9000) for isolated deployment.</li>
+                <li>Integrated GitHub webhooks to trigger Jenkins pipelines automatically on every code push </li>
+                <li>Configured Jenkinsfile based declarative pipeline for Express and Freestyle pipeline for Flask.</li>
+                <li>Troubleshooted deployment issues including Docker permissions, and Executor is</li>
               </ul>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-fire accent-amber"></i> Challenges & Solutions</h4>
               <ul>
-                <li><strong>GPG Key Error:</strong> Jenkins install failed — fixed by updating the apt keyring manually</li>
+                <li><strong>Jenkins Waiting for next Executor Error :</strong>Disk threshold triggered node offline — adjusted Jenkins disk threshold config</li>
                 <li><strong>Docker Socket Permission:</strong> Jenkins user lacked Docker access — added to docker group</li>
-                <li><strong>Node Offline Error:</strong> Disk threshold triggered node offline — adjusted Jenkins disk threshold config</li>
                 <li><strong>Webhook breakage:</strong> EC2 IP changed on restart — solved with Elastic IP allocation</li>
               </ul>
             </div>
           </div>
 
           <div class="project-tech">
+            <span class="tech-tag">CICD - Jenkins</span>
             <span class="tech-tag">Docker</span>
-            <span class="tech-tag">Docker Compose</span>
-            <span class="tech-tag">Jenkins</span>
             <span class="tech-tag">AWS EC2</span>
-            <span class="tech-tag">EBS</span>
             <span class="tech-tag">Elastic IP</span>
             <span class="tech-tag">Express.js</span>
             <span class="tech-tag">Flask</span>
@@ -415,56 +412,180 @@
           </div>
 
           <div class="project-links">
-            <a href="https://github.com/ChetanaMali/fullstack-docker-project" target="_blank" class="project-link">
+            <a href="https://github.com/ChetanaMali/CICD-Pipeline-project" target="_blank" class="project-link">
               <i class="fab fa-github"></i> GitHub Repo
             </a>
-            <a href="#" class="project-link secondary">
+            <!-- <a href="#" class="project-link secondary">
               <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
+            </a> -->
           </div>
         </div>
 
-        <!-- PROJECT 2 — Placeholder, ready for you to fill -->
-        <div class="project-card">
+        <!-- PROJECT 2 -->
+        <div class="project-card featured">
           <div class="project-card-header">
-            <div class="project-icon"><i class="fab fa-aws"></i></div>
+            <div class="project-icon"><i class="fab fa-github"></i></div>
             <div class="project-badges">
-              <span class="badge badge-wip">Add Details</span>
+              <!-- <span class="badge badge-featured">Featured</span> -->
+              <!-- <span class="badge badge-live">Live on AWS</span> -->
             </div>
           </div>
-          <h3 class="project-title">Project 2 — Your Project Name Here</h3>
-          <p class="project-desc">
-            Replace this with your project description. Describe what it does, what problem it solves, and how it works in 2–3 lines.
-          </p>
+          <h3 class="project-title"> GitHub Actions - AI Job Search Assistant  </h3>
+          <!-- <p class="project-desc">
+            A production-style multi-service web application running Express.js, Flask, and MongoDB as separate Docker containers — orchestrated with Docker Compose, deployed on AWS EC2, and automated with Jenkins CI/CD.
+          </p> -->
 
           <div class="project-details">
-            <div class="detail-block">
+            <!-- <div class="detail-block">
               <h4><i class="fas fa-exclamation-circle accent-amber"></i> Problem Solved</h4>
-              <p>What problem did this project address? Add your real context here.</p>
+              <p>Manual deployments were slow and error-prone. I automated the entire pipeline from GitHub push to live deployment on EC2 using Jenkins and webhooks — zero manual SSH.</p>
+            </div> -->
+            <div class="detail-block">
+              <h4><i class="fas fa-layer-group accent-cyan"></i> Details</h4>
+              <ul>
+                <li>Built a Python-based automation tool to search Cloud and DevOps job opportunities using the Adzuna Job API </li>
+                <li>Integrated Google Gemini AI to analyze job descriptions and compare them with my resume.</li>
+                <li>Automated the complete workflow using GitHub Actions.</li>
+                <li>Configured GitHub Secrets to securely manage API keys and credentials.</li>
+                <li>Integrated Gmail SMTP to send the final shortlisted job results through email.</li>
+                <li>Added duplicate job prevention by storing previously processed job IDs.</li>
+               
+              </ul>
             </div>
             <div class="detail-block">
-              <h4><i class="fas fa-layer-group accent-cyan"></i> Architecture</h4>
+              <h4><i class="fas fa-fire accent-amber"></i> Challenges & Solutions</h4>
               <ul>
-                <li>Step 1 of your architecture</li>
-                <li>Step 2 of your architecture</li>
-                <li>Step 3 of your architecture</li>
+                <li><strong>Gemini AI SDK Issue:</strong>Migrated from deprecated google.generativeai package to the latest google.genai SDK.</li>
+                <li><strong>Repeated Job Results:</strong> Implemented job ID storage to avoid sending the same job results repeatedly.</li>
+              </ul>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-fire accent-amber"></i> Challenges that I'm currently working on</h4>
+              <ul>
+                <li> Added filtering logic to focus on fresher-friendly opportunities and keywords to filter jobs like DevOps Intern, Junior DevOps Engineer, Cloud Engineer Trainee, and Entry-level Cloud roles, while removing senior-level job postings. However, it still sometimes shows experienced-level jobs. </li>
+                <li> Added a cron schedule to automate the workflow using GitHub Actions and receive job alert emails in the morning at 8 AM, but the email notification is not always triggered at the scheduled time. </li>
+                
               </ul>
             </div>
           </div>
 
           <div class="project-tech">
-            <span class="tech-tag">Technology 1</span>
-            <span class="tech-tag">Technology 2</span>
-            <span class="tech-tag">Technology 3</span>
+            <span class="tech-tag">CICD - GitHub Actions</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Gemini AI API</span>
+            <span class="tech-tag">Adzuna Job API</span>
+            <span class="tech-tag">Gmail SMTP</span>
+            <span class="tech-tag">GitHub Secrets</span>
+            <span class="tech-tag">CICD Automation</span>
           </div>
 
           <div class="project-links">
-            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub Repo</a>
+            <a href="https://github.com/ChetanaMali/ai-job-tracker-using-github-action" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub Repo
+            </a>
+            <!-- <a href="#" class="project-link secondary">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a> -->
           </div>
         </div>
 
+          <!-- PROJECT 3 — Placeholder, ready for you to fill -->
+        <div class="project-card featured">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fab fa-docker"></i></div>
+            <div class="project-badges">
+              <!-- <span class="badge badge-wip">Add Details</span> -->
+            </div>
+          </div>
+          <h3 class="project-title">Multi-Service Docker Deployment — Frontend, Backend & MongoDB</h3>
+          <!-- <p class="project-desc">
+            Replace this with your project description. Describe what it does, what problem it solves, and how it works in 2–3 lines.
+          </p> -->
+
+          <div class="project-details">
+            <!-- <div class="detail-block">
+              <h4><i class="fas fa-exclamation-circle accent-amber"></i> Problem</h4>
+              <p>Designed a secure and scalable AWS 3-tier architecture to overcome single-server limitations by implementing high availability, network isolation, load balancing, and automatic scaling for reliable application deployment.</p>
+            </div> -->
+            <div class="detail-block">
+              <h4><i class="fas fa-layer-group accent-cyan"></i> Details</h4>
+              <ul>
+                <li>Created individual Dockerfiles for frontend and backend services and tested containers independently</li>
+                <li>Configured Docker Compose to manage multiple containers with a custom Docker network</li>
+                <li>Implemented container communication using Docker service names instead of localhost.</li>
+                <li>Managed application configuration using environment variables and .env files.</li>
+                <li>Tested and verified communication between frontend (8000), backend (5000), and MongoDB (27017).</li>
+                <li>Used Docker commands for image building, container management, logs, and troubleshooting.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Docker Compose</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Linux</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/ChetanaMali/Flask-and-MongoDB" class="project-link"><i class="fab fa-github"></i> GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 — Placeholder, ready for you to fill -->
+        <div class="project-card featured">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fab fa-aws"></i></div>
+            <div class="project-badges">
+              <!-- <span class="badge badge-wip">Add Details</span> -->
+            </div>
+          </div>
+          <h3 class="project-title">Scalable & Secure 3-Tier Web Application Architecture (AWS)</h3>
+          <!-- <p class="project-desc">
+            Replace this with your project description. Describe what it does, what problem it solves, and how it works in 2–3 lines.
+          </p> -->
+
+          <div class="project-details">
+            <!-- <div class="detail-block">
+              <h4><i class="fas fa-exclamation-circle accent-amber"></i> Problem</h4>
+              <p>Designed a secure and scalable AWS 3-tier architecture to overcome single-server limitations by implementing high availability, network isolation, load balancing, and automatic scaling for reliable application deployment.</p>
+            </div> -->
+            <div class="detail-block">
+              <h4><i class="fas fa-layer-group accent-cyan"></i> Details</h4>
+              <ul>
+                <li>Designed a highly available 3-tier application architecture on AWS.</li>
+                <li>Created VPC with public and private subnets across multiple Availability Zones.</li>
+                <li>Configured Internet Gateway, NAT Gateway, Route Tables, and Security Groups.</li>
+                <li>Designed traffic flow using Application Load Balancer between application servers.</li>
+                <li>Configured Auto Scaling architecture for handling traffic changes and instance recovery.</li>
+                <li>Implemented Bastion Host approach for secure access to private EC2 instances.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            <span class="tech-tag">AWS VPC</span>
+            <span class="tech-tag">AWS EC2</span>
+            <span class="tech-tag">AWS ALB</span>
+            <span class="tech-tag">AWS ALB</span>
+            <span class="tech-tag">AWS ASG</span>
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">AWS Subnet</span>
+            <span class="tech-tag">AWS IGW</span>
+            <span class="tech-tag">AWS Nat Gateway</span>
+            <span class="tech-tag">AWS Route Table</span>
+          </div>
+
+          <!-- <div class="project-links">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub Repo</a>
+          </div> -->
+        </div>
+
+
+
         <!-- PROJECT 3 — Placeholder -->
-        <div class="project-card">
+        <!-- <div class="project-card">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-server"></i></div>
             <div class="project-badges">
@@ -498,7 +619,7 @@
           <div class="project-links">
             <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub Repo</a>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -516,21 +637,20 @@
 
         <div class="exp-item">
           <div class="exp-date">
-            <span class="mono">Dec 2025 — Present</span>
+            <span class="mono">Dec 2025 — Present*</span>
           </div>
           <div class="exp-content">
             <div class="exp-header">
               <h3 class="exp-role">Cloud & DevOps Engineer Trainee</h3>
-              <span class="exp-company">Self-Directed / Intellipaat PG Program</span>
+              <span class="exp-company">Intellipaat PG Program - Online</span>
               <span class="exp-type">Training + Projects</span>
             </div>
             <ul class="exp-bullets">
               <li>Completed PG program covering AWS, Linux, Docker, Jenkins, Terraform, and Ansible</li>
               <li>Built and deployed a multi-service fullstack application using Docker Compose on AWS EC2</li>
               <li>Configured Jenkins CI/CD pipeline with GitHub webhook integration for automated deployments</li>
-              <li>Debugged complex infrastructure issues: Jenkins GPG errors, Docker socket permissions, disk thresholds</li>
+              <li>Debugged complex infrastructure issues: Docker socket permissions, disk thresholds, Jenkins Executer issues</li>
               <li>Managed AWS resources: EC2, EBS, Elastic IP, IAM, S3, VPC, Security Groups</li>
-              <li>Prepared 79+ interview Q&A covering all major DevOps tools and cloud services</li>
             </ul>
             <div class="exp-tech">
               <span class="tech-tag sm">AWS</span>
@@ -542,8 +662,62 @@
           </div>
         </div>
 
+        <!-- experience 2 -->
+        <div class="exp-item placeholder">
+          <div class="exp-date">
+            <span class="mono">Dec 2023 - present*</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Game Programmer</h3>
+              <span class="exp-company">Apar Games - Mumbai</span>
+              <span class="exp-type">Full-time </span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Collaborated in a distributed development environment using version control systems.</li>
+              <li>Worked on feature implementation, debugging, and multiple software’s using different programming language.</li>
+            </ul>
+          </div>
+        </div>
+
         <!-- Add more experience here when you have internship/job -->
         <div class="exp-item placeholder">
+          <div class="exp-date">
+            <span class="mono">Feb 2026 - Apr 2026*</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Cloud Intern</h3>
+              <span class="exp-company">VisionRise Technosoft Pvt. Ltd. - Part-time / Remote</span>
+              <span class="exp-type">Full-time / Internship</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Hands-on experience with AWS services, Docker, Linux, and deployment workflows.</li>
+              <li>Worked on cloud environment setup and troubleshooting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Add more experience here when you have internship/job -->
+        <div class="exp-item placeholder">
+          <div class="exp-date">
+            <span class="mono">Sep 2021 - Apr 2022*</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Unity Developer</h3>
+              <span class="exp-company">iFieldSmart Technologies - Nashik</span>
+              <span class="exp-type">Full-time </span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Developed and maintained applications using C# and Unity development frameworks.</li>
+              <li>Implemented automated tasks including asset handling, model processing, and build workflows.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Add more experience here when you have internship/job -->
+        <!-- <div class="exp-item placeholder">
           <div class="exp-date">
             <span class="mono">Add here</span>
           </div>
@@ -558,19 +732,19 @@
               <li>Quantify wherever possible: "Reduced deployment time by 40%"</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </div>
   </section>
 
   <!-- ===================== CERTIFICATIONS ===================== -->
-  <section class="section" id="certifications">
+  <section class="section" id="education">
     <div class="container">
       <div class="section-header">
-        <span class="section-label mono">05 / certifications</span>
-        <h2 class="section-title">Certifications</h2>
-        <p class="section-subtitle">Validated skills and credentials</p>
+        <span class="section-label mono">05 / education</span>
+        <h2 class="section-title">Education</h2>
+        <!-- <p class="section-subtitle">Validated skills and credentials</p> -->
       </div>
 
       <div class="certs-grid">
@@ -578,25 +752,25 @@
         <div class="cert-card">
           <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
           <div class="cert-body">
-            <h3 class="cert-title">Post Graduate Program in DevOps & Cloud</h3>
+            <h3 class="cert-title">Executive Post Graduate Certification in Cloud Computing</h3>
             <span class="cert-issuer">Intellipaat</span>
-            <span class="cert-date mono">2026</span>
+            <span class="cert-date mono">2025 - Present</span>
             <p class="cert-desc">Comprehensive program covering AWS, Docker, Jenkins, Terraform, Ansible, and CI/CD practices</p>
           </div>
           <div class="cert-badge">PG Program</div>
         </div>
 
         <!-- Add AWS cert when you complete it -->
-        <!-- <div class="cert-card upcoming">
-          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+        <div class="cert-card ">
+          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
           <div class="cert-body">
-            <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
-            <span class="cert-issuer">Amazon Web Services</span>
-            <span class="cert-date mono accent-amber">In Progress</span>
-            <p class="cert-desc">Foundational AWS certification covering cloud concepts, security, and core services</p>
+            <h3 class="cert-title">Bachelor in Computer Engineering - 8.84 CGPA</h3>
+            <span class="cert-issuer">Pune University</span>
+            <span class="cert-date mono accent-amber">Jun 2018 - Jun 2022</span>
           </div>
-          <div class="cert-badge upcoming-badge">Coming Soon</div>
-        </div> -->
+          <div class="cert-badge">Bachelor Engineering</div>
+            
+        </div>
 
         <!-- Add more as you complete them -->
         <!-- <div class="cert-card upcoming">
@@ -695,9 +869,9 @@
           <button type="submit" class="btn btn-primary full-width">
             <i class="fas fa-paper-plane"></i> Send Message
           </button>
-          <p class="form-note mono">
+          <!-- <p class="form-note mono">
             * Form uses mailto — your email client will open. For a live contact form, connect Formspree or EmailJS.
-          </p>
+          </p> -->
         </form>
       </div>
     </div>
